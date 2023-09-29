@@ -1,10 +1,10 @@
 // friend function common in two classes.
 #include<iostream>
 using namespace std;
-class sample{
+class samples{
     int a;
     public:
-        sample(){
+        samples(){
             a = 10;
         }
     friend void add();
@@ -18,7 +18,7 @@ class demo{
         friend void add();
 };
 void add(){
-    sample s;
+    samples s;
     demo d;
     int c= s.a + d.b;
     cout<<"Addition= "<<c;
